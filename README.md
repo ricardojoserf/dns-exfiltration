@@ -1,5 +1,5 @@
 # DNS Exfiltration
-Notes and custom scripts for DNS exfiltration using DigitalOcean and GoDaddy. This project is a complement for SharpCovertTube, it covers how to receive and decode the DNS exfiltrated data.
+Notes and custom scripts for DNS exfiltration using DigitalOcean and GoDaddy. This project is a complement for [SharpCovertTube](https://github.com/ricardojoserf/SharpCovertTube), it covers how to receive and decode the DNS exfiltrated data.
 
 -------------------------------------------
 
