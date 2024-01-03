@@ -101,4 +101,8 @@ Then we can Base64-decode the DNS queries received in the minute 11:08 and store
 
 ### Sources
 
+For the DigitalOcean and GoDaddy set up I used mostly John Woodman's research:
+
 - [https://john-woodman.com/research/dns-exfiltration-setup/](https://john-woodman.com/research/dns-exfiltration-setup/)
+
+- [https://hinty.io/devforth/dns-exfiltration-of-data-step-by-step-simple-guide/](https://hinty.io/devforth/dns-exfiltration-of-data-step-by-step-simple-guide/)
