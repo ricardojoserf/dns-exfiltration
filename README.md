@@ -38,7 +38,7 @@ Then, in "Nameservers" subsection, add the DigitalOcean nameservers if they are 
 
 ### Testing DNS exfiltration
 
-We can now run a Python script to start monitoring DNS queries to the subdomain "steve": 
+We can now run a Python script to start monitoring DNS queries to the subdomains "*.steve.domain.com": 
 
 ```python
 import socket
