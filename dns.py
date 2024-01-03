@@ -3,8 +3,6 @@ import socket
 import argparse
 from dnslib import DNSRecord
 
-DNS_RECORD_TYPE_A = 1 # https://en.wikipedia.org/wiki/List_of_DNS_record_types
-
 
 def listener(ns_subdomain, log_file):
 	server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -19,7 +17,6 @@ def listener(ns_subdomain, log_file):
 		d = DNSRecord.parse(data)
 		subdomain = str(d.questions[0]._qname).split(ns_subdomain)[0]
 
-		# if (d.questions[0].qtype == DNS_RECORD_TYPE_A):
 		now = datetime.datetime.now()
 		current_time = now.strftime(f"%H:%M")
 		log_entry = current_time + " " + subdomain

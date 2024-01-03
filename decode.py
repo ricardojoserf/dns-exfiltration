@@ -1,4 +1,3 @@
-import sys
 import base64
 import argparse
 
@@ -20,15 +19,12 @@ def get_args():
 def GetMsg(logfile, filter):
 	print("Reading the minutes " + filter + " from " + logfile)
 	filter_array = filter.split(",")
-	#print(filter_array)
 	filtered_entries = ""
 	log_entries = open(logfile).read().splitlines()
 	for log in log_entries:
 		for time in filter_array:
 			if time in log:
-				#print(log)
 				subdomain = log.split(" ")[1]
-				#print(subdomain)
 				filtered_entries += subdomain
 	return filtered_entries
 
@@ -36,7 +32,6 @@ def GetMsg(logfile, filter):
 def main():
 	args = get_args()
 	enc_msg = GetMsg(args.logfile, args.filter)
-	#print(enc_msg)
 	msg = Decode(enc_msg)
 	print(msg)
 
