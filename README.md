@@ -1,5 +1,5 @@
 # DNS Exfiltration
-Notes and custom scripts for DNS exfiltration using DigitalOcean and GoDaddy.
+Notes and custom scripts for DNS exfiltration using DigitalOcean and GoDaddy. This project is a complement for SharpCovertTube, it covers how to receive and decode the DNS exfiltrated data.
 
 -------------------------------------------
 
@@ -104,5 +104,3 @@ Then we can Base64-decode the DNS queries received in the minute 11:08 and store
 For the DigitalOcean and GoDaddy set up I used mostly John Woodman's research:
 
 - [https://john-woodman.com/research/dns-exfiltration-setup/](https://john-woodman.com/research/dns-exfiltration-setup/)
-
-- [https://hinty.io/devforth/dns-exfiltration-of-data-step-by-step-simple-guide/](https://hinty.io/devforth/dns-exfiltration-of-data-step-by-step-simple-guide/)
