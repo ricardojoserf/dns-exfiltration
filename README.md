@@ -1,5 +1,5 @@
 # DNS Exfiltration
-Tutorial and scripts for DNS exfiltration using DigitalOcean and GoDaddy
+Notes and custom scripts for DNS exfiltration using DigitalOcean and GoDaddy.
 
 -------------------------------------------
 
@@ -11,13 +11,13 @@ Create a project, connect the GoDaddy's domain to it and create a droplet.
 
 Then, add the following DNS records:
 
-- "A" record for your domain, for example "domain.com", pointing to the droplet's IP address
-- "A" record for subdomain "ns" pointing to the droplet's IP address
-- "NS" record for a subdomain, for example "steve", pointing to the droplet's IP address
+- "A" record for your domain, for example "domain.com", pointing to the droplet's IP address.
+- "A" record for subdomain "ns" pointing to the droplet's IP address.
+- "NS" record for a subdomain, for example "steve", pointing to the droplet's IP address.
    - NOTE: This is the subdomain we will use for DNS exfiltration.
-- "NS" record redirecting to ns1.digitalocean.com (if not already in there)
-- "NS" record redirecting to ns2.digitalocean.com (if not already in there)
-- "NS" record redirecting to ns3.digitalocean.com (if not already in there)
+- "NS" record redirecting to ns1.digitalocean.com (if not already in there).
+- "NS" record redirecting to ns2.digitalocean.com (if not already in there).
+- "NS" record redirecting to ns3.digitalocean.com (if not already in there).
 
 ![img3](https://raw.githubusercontent.com/ricardojoserf/ricardojoserf.github.io/master/images/dns-exfiltration/Screenshot_3.png)
 
