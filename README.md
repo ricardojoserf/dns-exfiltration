@@ -56,6 +56,12 @@ while True:
   print("Subdomain: " + subdomain)
 ```
 
+And probably you need to install dnslib:
+
+```
+pip install dnslib
+```
+
 It must be run as superuser and the port 53 is probably already in use so first we can stop any process using that port with:
 
 ```
